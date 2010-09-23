@@ -2,13 +2,10 @@ use strict;
 use warnings;
 package Acme::System;
 
+#ABSTRACT: Example code showing testing based on the output of command line apps
+
 use IPC::Run;
 use List::Util qw(sum);
-
-#my @vzps = ( "vzps", "-E", $arg{'veid'}, "-o", "pid,comm" );
-#my $vzps_output;
-#my ( $stdin, $stderr ) = ( undef, undef );
-#IPC::Run::run( \@vzps, \$stdin, \$vzps_output, \$stderr );
 
 =method pidsum
     Return the sum of all the PID's on a system

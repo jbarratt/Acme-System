@@ -3,6 +3,9 @@
 use warnings;
 use strict;
 
+package live;
+#ABSTRACT: Acme::System test code showing live results really are live
+
 use Acme::System;
 
 print "Sum of all system PID's: " . Acme::System::pidsum() . "\n";
