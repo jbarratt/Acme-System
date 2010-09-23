@@ -1,0 +1,11 @@
+#!/usr/bin/perl
+
+use warnings;
+use strict;
+
+use Acme::System;
+
+print "Sum of all system PID's: " . Acme::System::pidsum() . "\n";
+
+print "Current CPU user time: " . Acme::System::vmstat_col("us") . "\n";
+print "Current Free Mem: " . Acme::System::vmstat_col("free") . "\n";
